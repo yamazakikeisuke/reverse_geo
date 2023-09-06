@@ -9,4 +9,4 @@ APIやGeoPandasなどでも同様の機能を提供していますが、回数�
 
 [統計地理情報システム](https://www.e-stat.go.jp/gis/statmap-search?type=2)
 
-[Slownewsの市区町村や選挙区境界データ]()
+[スマートニュース メディア研究所の選挙区境界データなど](https://smartnews-smri.com/research/research-757/)
