@@ -7,11 +7,10 @@ def reverse_geo(shdf, point):
        polygon = row['geometry']
        #"point"がどの境界に含まれるかを判定する
        if polygon.contains(point):
-         #見つかったら該当する市区町村の情報を必要な列だけ返す
-         #Erisのデータの場合は、県、郡、市区町村、人口、世帯数
-          return(row['KEN'], row['GUN'], row['SIKUCHOSON'], row['P_NUM'], row['H_NUM'])
-    #見つけられなかった場合はNoneを返す
-    return("None", "None", "None", "None", "None")
+          #見つかったら該当する市区町村の情報を返す
+          return(row)
+    #見つけられなかった場合はNanを返す
+    return("Nan")
 
 #判定に使う境界データを読み込む（"japan_ver84"ディレクトリー配下のErisの全国市区町村界データの場合）
 shdf = gp.read_file('./japan_ver84/japan_ver84.shp', encoding='shift-jis')
